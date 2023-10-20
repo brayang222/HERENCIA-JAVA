@@ -12,9 +12,9 @@ public class App {
    public static void main(String[] args) {
 
       List<FiguraGeometrica> figuras = new ArrayList<>();
-      Circulo circulo = new Circulo();
+      Circulo circulo = new Circulo(10);
       Triangulo triangulo = new Triangulo();
-      Cuadrado cuadrado = new Cuadrado();
+      Cuadrado cuadrado = new Cuadrado(20, 40);
 
       figuras.add(circulo);
       figuras.add(triangulo);
@@ -37,6 +37,12 @@ public class App {
       } else {
          System.out.println("El cuadrado no es una figura geométrica");
       }
-
+      calcular(figuras);
+   }
+   public static void calcular(List<FiguraGeometrica> figuraGeometricas) {
+      figuraGeometricas.forEach(figuraGeometrica -> {
+         System.out.println(figuraGeometrica + "- Area " + figuraGeometrica.calcularArea());
+         System.out.println(figuraGeometrica + "- Perimetro " + figuraGeometrica.calcularPerimetro());
+      });
    }
 }

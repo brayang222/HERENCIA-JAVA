@@ -1,9 +1,21 @@
 package com.brayanvargas.figuras.domain;
 
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
    private String color;
    private double altura;
    private double ancho;
+
+   public abstract double calcularArea();
+   public abstract double calcularPerimetro();
+
+   @Override
+   public String toString() {
+      return "FiguraGeometrica{" +
+              "color='" + color + '\'' +
+              ", altura=" + altura +
+              ", ancho=" + ancho +
+              '}';
+   }
 
    public String getColor() {
       return color;

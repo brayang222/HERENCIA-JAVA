@@ -11,6 +11,10 @@ public class Bicicleta extends Vehiculo{
       this.tipoFreno = tipoFreno;
    }
 
+   @Override
+   public void acelerar() {
+
+   }
 
    public byte getNroPiniones() {
       return nroPiniones;
@@ -43,4 +47,6 @@ public class Bicicleta extends Vehiculo{
    public void setTipoFreno(String tipoFreno) {
       this.tipoFreno = tipoFreno;
    }
+
+
 }

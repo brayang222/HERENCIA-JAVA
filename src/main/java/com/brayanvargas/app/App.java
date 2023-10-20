@@ -9,7 +9,7 @@ public class App {
    public static void main(String[] args) {
 
       List<Vehiculo> vehiculos = new ArrayList<>();
-      Vehiculo vehiculo1 = new Vehiculo("Mazda", "rx7", (short) 2001);
+      //Vehiculo vehiculo1 = new Vehiculo("Mazda", "rx7", (short) 2001);
       Taxi taxi = new Taxi("Toyota", "Corolla", (short) 1995);
       Bicicleta bicicleta = new Bicicleta("JW", "pirana", (short) 2017, "brembo");
       BicicletaMontana mtb = new BicicletaMontana("Mountain bike", "terrain", (short) 2022, "Brembo", "Showa");
@@ -20,9 +20,9 @@ public class App {
       vehiculos.add(mtb);
       vehiculos.add(rutera);
 
-      vehiculo1 = mtb;
+     //vehiculo1 = mtb;
 
-      ((BicicletaMontana)vehiculo1).setTipoSuspension("Monobrazo");
+      //((BicicletaMontana)vehiculo1).setTipoSuspension("Monobrazo");
 
       taxi.setColor("morado");
 

@@ -1,6 +1,6 @@
 package com.brayanvargas.appdomain;
 
-public class Vehiculo {
+public abstract class Vehiculo {
    private String matricula;
    private String marca;
    private  String modelo;
@@ -13,9 +13,7 @@ public class Vehiculo {
       this.anio = anio;
    }
 
-   public void acelerar(){
-      System.out.println("Acelerando...");
-   }
+   public abstract void acelerar();
 
    public void frenar(){
       System.out.println("Frenando...");
