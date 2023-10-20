@@ -5,6 +5,10 @@ public class Taxi extends Vehiculo {
    private String empresa;
    private byte numPasajeros;
 
+   public Taxi(String marca, String modelo, short anio) {
+      super(marca, modelo, anio);
+   }
+
    public String getRegistroCirculacion() {
       return registroCirculacion;
    }

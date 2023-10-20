@@ -7,6 +7,12 @@ public class Vehiculo {
    private short anio;
    private String color;
 
+   public Vehiculo(String marca, String modelo, short anio) {
+      this.marca = marca;
+      this.modelo = modelo;
+      this.anio = anio;
+   }
+
    public void acelerar(){
       System.out.println("Acelerando...");
    }
@@ -15,7 +21,15 @@ public class Vehiculo {
       System.out.println("Frenando...");
    }
 
-   public String getMatricula() {
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
+
+    public String getMatricula() {
       return matricula;
    }
 

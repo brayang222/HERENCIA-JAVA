@@ -4,6 +4,13 @@ public class Bicicleta extends Vehiculo{
    private byte nroPiniones;
    private double tamanoRueda;
    private String tipoRueda;
+   private String tipoFreno;
+
+   public Bicicleta(String marca, String modelo, short anio, String tipoFreno) {
+      super(marca, modelo, anio);
+      this.tipoFreno = tipoFreno;
+   }
+
 
    public byte getNroPiniones() {
       return nroPiniones;
@@ -17,6 +24,10 @@ public class Bicicleta extends Vehiculo{
       return tamanoRueda;
    }
 
+   public String getTipoFreno() {
+      return tipoFreno;
+   }
+
    public void setTamanoRueda(double tamanoRueda) {
       this.tamanoRueda = tamanoRueda;
    }
@@ -27,5 +38,9 @@ public class Bicicleta extends Vehiculo{
 
    public void setTipoRueda(String tipoRueda) {
       this.tipoRueda = tipoRueda;
+   }
+
+   public void setTipoFreno(String tipoFreno) {
+      this.tipoFreno = tipoFreno;
    }
 }
