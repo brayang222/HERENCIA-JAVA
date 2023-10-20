@@ -27,9 +27,14 @@ public class App {
       taxi.setColor("morado");
 
       imprimirTiposDeVehiculos(vehiculos);
+      aceleracionVehiculo(vehiculos);
    }
 
-
+   public static void aceleracionVehiculo(List<Vehiculo> vehiculos){
+      vehiculos.forEach(vehiculo -> {
+         vehiculo.acelerar();
+      });
+   }
 
    public static void imprimirTiposDeVehiculos(List<Vehiculo> vehiculos) {
       for (Vehiculo vehiculo : vehiculos) {

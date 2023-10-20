@@ -1,11 +1,16 @@
 package com.brayanvargas.appdomain;
 
-public class BicicletaMontana extends Bicicleta{
+public final class BicicletaMontana extends Bicicleta{
    private String tipoSuspension;
 
    public BicicletaMontana(String marca, String modelo, short anio, String tipoFreno, String tipoSuspension) {
       super(marca, modelo, anio, tipoFreno);
       this.tipoSuspension = tipoSuspension;
+   }
+
+   @Override
+   public void acelerar() {
+      System.out.println("Acelero picando una rueda");
    }
 
    public String getTipoSuspension() {

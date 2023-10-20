@@ -1,12 +1,17 @@
 package com.brayanvargas.appdomain;
 
-public class Taxi extends Vehiculo {
+public final class Taxi extends Vehiculo {
    private String registroCirculacion;
    private String empresa;
    private byte numPasajeros;
 
    public Taxi(String marca, String modelo, short anio) {
       super(marca, modelo, anio);
+   }
+
+   @Override
+   public void acelerar() {
+      System.out.println("acelero diferente, más lento");
    }
 
    public String getRegistroCirculacion() {
