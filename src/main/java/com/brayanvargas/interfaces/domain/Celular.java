@@ -9,6 +9,11 @@ public abstract class Celular implements Activable{
     private boolean encendido;
     private Persona propietario;
 
+    public Celular(String marca, Persona propietario) {
+        this.marca = marca;
+        this.propietario = propietario;
+    }
+
     @Override
     public void encender() {
         this.encendido = true;

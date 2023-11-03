@@ -7,6 +7,14 @@ public class Persona {
     private String patron;
     private short pin;
 
+    public Persona(String nombre, String rostro, String huella, String patron, short pin) {
+        this.nombre = nombre;
+        this.rostro = rostro;
+        this.huella = huella;
+        this.patron = patron;
+        this.pin = pin;
+    }
+
     public String getNombre() {
         return nombre;
     }

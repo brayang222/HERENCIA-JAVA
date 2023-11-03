@@ -1,14 +1,14 @@
 package com.brayanvargas.interfaces.domain;
 
-public class Xiaomi extends CelularBasico implements Desbloqueable{
+public class CelularConHuella extends CelularBasico implements Desbloqueable{
 
-    public Xiaomi(String marca, Persona propietario) {
+    public CelularConHuella(String marca, Persona propietario) {
         super(marca, propietario);
     }
 
     @Override
     public boolean desbloquear(Persona p) {
-        if (p.getRostro().equals(this.getPropietario().getRostro())){
+        if (p.getHuella().equals(this.getPropietario().getHuella())){
             return true;
         } else {
             return super.desbloquear(p);
